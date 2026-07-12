@@ -1,0 +1,203 @@
+/* 1. RESET PADRÃO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DEIXA A ROLAGEM SUAVE */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 2. O FUNDO DO SITE FICA TOTALMENTE PRETO */
+body {
+    background-color: #111111; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; 
+    padding: 40px 0;
+}
+
+/* 3. A FOLHA DE PAPEL GOURMET */
+.folha-menu {
+    background-color: #F2A25D; 
+    max-width: 700px;         
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: 40px 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7); 
+    border-radius: 12px;
+    
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+}
+
+/* 4. ALINHAMENTO DO TOPO */
+.pao-topo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pao-topo img {
+    max-width: 350px; 
+    height: auto;
+}
+
+/* O TITULO BURGER DO DEV COLADO NO PÃO */
+.nome-empresa {
+    font-family: 'Arial Black', sans-serif;
+    color: #e6e6e6;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+    margin-top: -56px; 
+}
+
+/* BARRA DE NAVEGAÇÃO (MENU DO TOPO) */
+.menu-navegacao {
+    display: flex;
+    gap: 15px;          
+    margin-top: 20px;   
+    margin-bottom: 10px;
+}
+
+.menu-navegacao a {
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4); 
+    transition: all 0.2s ease;
+}
+
+.menu-navegacao a:hover {
+    background-color: #111;
+    color: #FFF;
+}
+
+/* 5. ÁREA DOS INGREDIENTES CHANCE */
+.conteudo-ingredientes {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.ingrediente {
+    width: 100%;
+    max-width: 550px;
+    margin: 35px auto;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.img-ingrediente {
+    display: block;
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto 15px auto;
+}
+
+.ingrediente h2 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.ingrediente p {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* AS LISTAS DE LANCHES */
+.lista-lanches {
+    list-style: none;
+    margin-top: 15px;
+    text-align: left; 
+}
+
+.lista-lanches li {
+    padding: 15px 0;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+}
+
+/* CORES DOS INGREDIENTES */
+.ingrediente.alface {
+    background-color: #A2D149; 
+    border: 1px solid #8CB83E;
+    color: #111;
+}
+.ingrediente.alface h2 { color: #111; }
+.ingrediente.alface p { color: #333; }
+
+.ingrediente.queijo {
+    background-color: #F7D046;
+    border: 1px solid #E0BC3B;
+    color: #111;
+}
+.ingrediente.queijo h2 { color: #111; }
+.ingrediente.queijo p { color: #333; }
+
+.ingrediente.carne {
+    background-color: #6E473B;
+    border: 1px solid #57382E;
+}
+.ingrediente.carne h2 { color: #FFF; }
+.ingrediente.carne p { color: #DDD; }
+.ingrediente.carne .preco { color: #FFF; }
+.ingrediente.carne .lista-lanches li { 
+    color: #FFF; 
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
+}
+
+/* ALINHAMENTO DE PREÇOS E ESTILO DOS BOTÕES */
+.lanche-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.preco {
+    font-weight: bold;
+    color: #111;
+}
+
+.lanche-detalhe {
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+/* O BOTÃO DO WHATSAPP GOURMET */
+.btn-pedido {
+    display: inline-block;
+    background-color: #25D366; 
+    color: white;
+    text-decoration: none;     
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-pedido:hover {
+    background-color: #128C7E;
+}
+
+/* 6. ALINHAMENTO DO RODAPÉ */
+.pao-base {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pao-base img {
+    max-width: 350px;
+    height: auto;
+}
